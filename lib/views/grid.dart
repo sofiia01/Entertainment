@@ -128,16 +128,17 @@ class GridPanel extends StatelessWidget {
           child: Column(
             children: [
               Expanded(
-                  child: Container(
-                clipBehavior: Clip.antiAlias,
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(14)),
+                child: Container(
+                  clipBehavior: Clip.antiAlias,
+                  decoration: const BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(14)),
+                  ),
+                  child: Image.network(
+                    image,
+                    fit: BoxFit.cover,
+                  ),
                 ),
-                child: Image.network(
-                  image,
-                  fit: BoxFit.cover,
-                ),
-              )),
+              ),
               Text(
                 text,
                 style: const TextStyle(

@@ -8,7 +8,7 @@ void main() {
       brightness: Brightness.dark,
       primary: Colors.grey.shade900,
       onPrimary: Colors.white,
-      secondary: const Color.fromARGB(255, 118, 98, 64),
+      secondary: Colors.grey.shade900,
       onSecondary: Colors.white,
       error: Colors.red.shade700,
       onError: Colors.white,
